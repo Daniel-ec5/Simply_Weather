@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Weather</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="./images/weather.svg" alt="Weather Icon" id="weatherIcon">
+            <h1>Simply Weather</h1>
+            
+    </div>
+    <p  id="p">Get the current weather for any city</p>
+    <div id="search">
+        <img src="./images/menu.svg" alt="Menu Icon" id="menuIcon">
+        <input list="cities" id="cityInput" placeholder="Enter city name">
+        <datalist id="cities">
+            
+        </datalist  >
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="result-container">
+        <div class="result" id="result-template">
+            <div class="name-date">
+                <span class="cityName">LAGOS</span>
+                <div class="date">
+                    <span class="day">Monday</span>
+                    <span class="dateNumber">25</span>
+                    <span class="month">September</span>
+                </div>
+                <div class="time">
+                    <span class="hour">10:00</span>
+                    <span class="ampm">AM</span>
+                </div>
+            </div>
+            <div class="weather-info">
+                <div class="name-temp">
+                    <span class="weatherName">Sunny</span>
+                    <span class="temperature">25°C</span>
+                </div>
+                <div class="details">
+                    <span class="humidity">Humidity: 60%</span>
+                    <span class="wind">Wind: 10 km/h</span>
+                    <span class="precipitation">Precipitation: 0%</span>
+                </div>
+                <img src="./images/sunny.svg" alt="Weather Icon" class="weather-icon">
+            </div>
+
+        </div>
+        <div class="error-message" id="error-message">Please enter a valid city name.</div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
