@@ -1,0 +1,3 @@
+const CONFIG = {
+    OPEN_WEATHER_API_KEY: "your_open_weather_api_key_here"
+}
